@@ -1,0 +1,16 @@
+---
+- include_vars: "group_vars/vars.yml"
+- include_vars: "group_vars/vault.yml"
+
+- name: install monit
+  apt: pkg=monit state=present
+
+- name: set mail server for notifications in monit
+  template: >
+    src=monitrc.j2 dest=/etc/monit/monitrc
+    owner=root group=root mode=0700
+  notify:
+    - reload monit
+
+- name: make sure monit is running
+  service: name=monit state=running enabled=yes

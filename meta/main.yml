@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Sam Hamilton
+  description: Ansible Monit Role
+  company: Blazing Barons
+  issue_tracker_url: https://github.com/blazingbarons/ansible-role-monit/issues
+  license: Apache
+  min_ansible_version: 1.9
+  platforms:
+    - name: Debian
+      versions:
+        - jessie
+  galaxy_tags:
+    - system
+dependencies: []
