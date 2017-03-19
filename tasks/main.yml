@@ -1,7 +1,4 @@
 ---
-- include_vars: "group_vars/vars.yml"
-- include_vars: "group_vars/vault.yml"
-
 - name: install monit
   apt: pkg=monit state=present
 
