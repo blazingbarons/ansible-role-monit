@@ -106,6 +106,7 @@
 ## are expanded at runtime. For example, to override the sender, use:
 #
 # set mail-format { from: monit@foo.bar }
+set mail-format { from: {{ monit_from_email }} }
 #
 #
 ## You can set alert recipients whom will receive alerts if/when a
