@@ -10,4 +10,4 @@
     - reload monit
 
 - name: make sure monit is running
-  service: name=monit state=running enabled=yes
+  service: name=monit state=started enabled=yes
